@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #065F46;
+  /* Emerald 800 - Deep Forest Green */
+  --color-secondary: #059669;
+  /* Emerald 600 - Lighter Green Accent */
+  --color-cta: #D97706;
+  /* Amber 600 - Rich Gold/Amber */
+  --color-background: #F0FDF4;
+  /* Green 50 - Very light tint */
+  --color-text: #022C22;
+  /* Emerald 950 - Almost black green */
+
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
